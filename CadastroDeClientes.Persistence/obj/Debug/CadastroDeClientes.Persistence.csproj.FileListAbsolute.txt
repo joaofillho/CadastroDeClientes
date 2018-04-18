@@ -1,0 +1,14 @@
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\CadastroDeClientes.Persistence.dll.config
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\CadastroDeClientes.Persistence.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\CadastroDeClientes.Persistence.pdb
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\CadastroDeClientes.Domain.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\EntityFramework.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\CadastroDeClientes.Domain.pdb
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\EntityFramework.xml
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\obj\Debug\CadastroDeClientes.Persistence.csprojResolveAssemblyReference.cache
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\obj\Debug\CadastroDeClientes.Persistence.Migrations.Migrations_Banco_Inicial.resources
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\obj\Debug\CadastroDeClientes.Persistence.csproj.GenerateResource.Cache
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\obj\Debug\CadastroDeClientes.Persistence.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Persistence\obj\Debug\CadastroDeClientes.Persistence.pdb

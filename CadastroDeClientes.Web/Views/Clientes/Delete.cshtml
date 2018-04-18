@@ -1,0 +1,85 @@
+﻿@model CadastroDeClientes.Domain.Entities.Cliente
+
+@{
+    ViewBag.Title = "Exclusão";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/toastr.min.css")" rel="stylesheet" type="text/css" />
+}
+
+
+
+
+<h2>Exclusão de Cliente</h2>
+
+
+<h3>Deseja excluir o cadastro atual?</h3>
+<div>
+
+@using (Html.BeginForm("Delete", "Clientes", FormMethod.Post, new { id = "formCrud" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf, new { htmlAttributes = new { @class = "form-control",  id = "idcpf" } })
+            @Html.ValidationMessageFor(model => model.Cpf, "", new { @class = "text-danger cpf_idade" })
+            <div id="alertaCpf" class="alert-danger"></div>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento, new { htmlAttributes = new { @class = "form-control", id= "idDataNascimento" } })
+            <div id="alertaIdade" class="alert-danger"></div>
+            @Html.ValidationMessageFor(model => model.DataNascimento, "", new { @class = "text-danger cpf_idade" })
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+            @Html.ValidationMessageFor(model => model.Sexo, "", new { @class = "text-danger" })
+        </dd>
+
+    </dl>
+
+        <div class="form-actions no-color">
+            <input type="button" value="Confirmar Exclusão" class="btn btn-danger" id="btnExcluir" />
+        </div>
+    }
+
+
+</div>
+
+<script src="~/Scripts/inputmask/jquery.inputmask.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Scripts/toastr.min.js"></script>
+<script src="~/Scripts/projeto/enviarFormulario.js"></script>
+<script src="~/Scripts/projeto/utilities.js"></script>
+<script type="text/javascript">
+
+    var btnAcao = $("input[type='button']");
+    var formulario = $("#formCrud");
+
+</script>  

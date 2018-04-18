@@ -1,0 +1,4 @@
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Domain\bin\Debug\CadastroDeClientes.Domain.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Domain\bin\Debug\CadastroDeClientes.Domain.pdb
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Domain\obj\Debug\CadastroDeClientes.Domain.dll
+C:\Trabalho\CadastroDeClientes\CadastroDeClientes.Domain\obj\Debug\CadastroDeClientes.Domain.pdb

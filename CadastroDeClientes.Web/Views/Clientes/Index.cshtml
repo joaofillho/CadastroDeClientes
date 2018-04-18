@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CadastroDeClientes.Domain.Entities.Cliente>
+
+@{
+    ViewBag.Title = "Clientes Cadastrados";
+}
+<link href="~/Content/toastr.min.css" rel="stylesheet" />
+<h2>Lista de Clientes cadastrados</h2>
+
+<p>
+    <a class="btn btn-success" data-action="Create"><span class="glyphicon glyphicon-plus"></span></a>
+</p>
+<table class="table table-striped" id="tbTabela">
+    <thead>
+        <tr>
+            <th data-column-id="Nome" data-order="asc">Nome</th>
+            <th data-column-id="DataNascimento" data-converter="datetime">Data de Nascimento</th>
+            <th data-column-id="Cpf">Cpf</th>
+            <th data-column-id="Sexo">Sexo</th>
+            <th data-formatter="acoes"></th>
+        </tr>
+    </thead>
+</table>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal_janela">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="modal_conteudo"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+   
+    <script src="~/Scripts/inputmask/jquery.inputmask.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/jquery.bootgrid.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/projeto/jsBootgrid.js"></script>
+    
+    <script type="text/javascript">
+        var controller = "Clientes";
+        var urlListar = "@Url.Action("Listar")";
+        $(document).ready(carregarGrid);
+    </script>
+}
